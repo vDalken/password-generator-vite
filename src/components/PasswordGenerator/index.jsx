@@ -20,6 +20,7 @@ import {
   RangeInput,
   ButtonCopyContainer
 } from './styles'
+import IconCopy from '../IconCopy'
 
 const PasswordGenerator = () => {
   const [rangeValue, setRangeValue] = useState(2)
@@ -106,7 +107,7 @@ const PasswordGenerator = () => {
           <ButtonCopyContainer>
             <p>{wasClicked ? 'COPIED' : ''}</p>
             <CopyButton onClick={handleCopyButtonClick}>
-              <img src="src/assets/images/icon-copy.svg" alt="copy button" />
+              <IconCopy />
             </CopyButton>
           </ButtonCopyContainer>
         </PasswordContainer>
