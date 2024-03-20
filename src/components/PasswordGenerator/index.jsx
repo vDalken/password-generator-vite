@@ -118,6 +118,7 @@ const PasswordGenerator = () => {
                 <CharacterLengthText>Character Length</CharacterLengthText>
                 <CharacterLengthNumber
                   $isDoubleDigits={rangeValue > 9 ? true : false}
+                  data-testid="character-length-number"
                 >
                   {rangeValue}
                 </CharacterLengthNumber>
@@ -129,6 +130,7 @@ const PasswordGenerator = () => {
                 value={rangeValue}
                 onChange={(event) => setRangeValue(event.target.value)}
                 $size={rangeValue}
+                data-testid="range-input"
               />
             </header>
             <Options>
