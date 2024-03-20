@@ -4,7 +4,7 @@ import { screen, render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
 describe(PasswordGenerator, () =>{
-  it('it should update password strength when checkboxes are clicked', async () => {
+  it('should update password strength when checkboxes are clicked', async () => {
     const user = userEvent.setup()
     render(<PasswordGenerator />)
   
@@ -28,7 +28,7 @@ describe(PasswordGenerator, () =>{
     }
   })
   
-  it('it should update password when generate is clicked', async () => {
+  it('should update password when generate is clicked', async () => {
     render(<PasswordGenerator />)
   
     const user = userEvent.setup()
@@ -46,7 +46,11 @@ describe(PasswordGenerator, () =>{
     expect(updatedPasswordText).not.toEqual(defaultPasswordValue)
   })
   
-  it("it should update bar's color when generate is clicked", async () => {
-  
+  it('should update bar\'s color when generate is clicked', async () => {
+   
+  })
+
+  it('should update password length when slider is dragged and generate is clicked', async() =>{
+
   })
 })
