@@ -172,7 +172,7 @@ const PasswordGenerator = () => {
               <p data-testid="password-strength">{passwordStrength}</p>
               <StrengthBars>
                 {[...Array(4)].map((_, i) => (
-                  <StrengthBar data-testid="strength-bar" key={i} $filled={optionsCount > i ? optionsCount : 0}></StrengthBar>
+                  <StrengthBar data-testid={`strength-bar-${i}`} key={i} $filled={optionsCount > i ? optionsCount : 0}></StrengthBar>
                 ))}
               </StrengthBars>
             </StrengthContainer>
