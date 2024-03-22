@@ -46,7 +46,9 @@ describe(PasswordGenerator, () => {
     expect(updatedPasswordText).not.toEqual(defaultPasswordValue)
   })
 
-  it("should update bar's color when generate is clicked", async () => {})
+  it("should update bar's color when generate is clicked", async () => {
+    
+  })
 
   it('should update password length when slider is dragged and generate is clicked', async () => {
     const {getByTestId} = render(<PasswordGenerator />)

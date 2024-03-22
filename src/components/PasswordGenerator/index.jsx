@@ -131,6 +131,8 @@ const PasswordGenerator = () => {
                 onChange={(event) => setRangeValue(event.target.value)}
                 $size={rangeValue}
                 data-testid="range-input"
+                $backgroundValue={rangeValue}
+                $maxBackgroundValue={20}
               />
             </header>
             <Options>
